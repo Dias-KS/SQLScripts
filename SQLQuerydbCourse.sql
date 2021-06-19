@@ -46,6 +46,7 @@ CREATE TABLE [SignIn] (
 		[Keyboard]		NVARCHAR (MAX)	NOT NULL,
 		[Mouse]			NVARCHAR (MAX)	NOT NULL,
 		[Headphones]	NVARCHAR (MAX)	NOT NULL,
+		[Image]			IMAGE			NULL,
 		CONSTRAINT PK_Computer_ID PRIMARY KEY ([ID])
 		
 		)

@@ -88,4 +88,7 @@ CREATE TABLE [Airplane] (
 )
 GO	
 
+ALTER TABLE [Airplane]
+ALTER COLUMN [Picture] NVARCHAR (MAX)	NULL
+
 INSERT [Airplane] ([NumberAirplane], [IDTypeAirplane], [NumberOfSeats], [SpeedOfFlight], [IDRoute]) VALUES ('ÒΣ-154', '1', '255', '220 κμ/χ', '1')

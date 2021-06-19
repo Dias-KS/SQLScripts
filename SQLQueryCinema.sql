@@ -1,0 +1,24 @@
+CREATE DATABASE [Cinema]
+
+USE Cinema
+
+
+CREATE TABLE [Genre] (
+
+	[ID]				INT IDENTITY (0, 1)		,
+	[Title]				NVARCHAR (50)			NOT NULL,
+	CONSTRAINT PK_Genre_ID PRIMARY KEY ([ID])
+
+)
+GO
+
+CREATE TABLE [Filmes] (
+
+	[ID]				INT IDENTITY (0, 1)		,
+	[NameFilm]			NVARCHAR (MAX)			NOT NULL,
+	[Description]		NVARCHAR (MAX)			NOT NULL,
+	[IDGenre]			NVARCHAR (50) FOREIGN KEY REFERENCES [Genre] ([Title]) ON DELETE CASCADE ON UPDATE CASCADE,
+
+
+)
+GO

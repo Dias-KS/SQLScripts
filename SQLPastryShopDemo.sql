@@ -1,0 +1,5 @@
+CREATE DATABASE [PastryShop]
+
+USE PastryShop
+
+CREATE TABLE []
